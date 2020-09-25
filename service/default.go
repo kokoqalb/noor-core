@@ -31,4 +31,7 @@ type request struct {
 	Target string `json:"target"`
 }
 
-func(service *defaultService) GetResult(bytes []byte) 
+func(service *defaultService) GetResult(bytes []byte) {
+	// TODO : write something
+
+} 

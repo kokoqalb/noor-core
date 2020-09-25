@@ -14,7 +14,7 @@ type App interface {
 }
 
 func New(r router.Router) App {
-	app := nre(app)
+	app := new(app)
 	addr := os.Getenv("PORT")
 	if addr = "" {
 		log.Println("$PORT not set -- using 8080 by default")
