@@ -28,7 +28,7 @@ func New() *chi.Mux {
 	router.Use(middleware.Recoverer)
 	router.Use(middleware.URLFormat)
 	router.Use(render.SetContentType(render.ContentTypeJSON))
-	
+
 	// Tasks for GET request
 	router.Get("/", func(writer http.ResponseWriter, request *http.Request) {
 		// TODO : Write something
@@ -41,3 +41,4 @@ func New() *chi.Mux {
 
 	return router
 }
+

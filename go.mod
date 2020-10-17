@@ -15,3 +15,4 @@ require (
 	github.com/watson-developer-cloud/go-sdk v1.7.0
 	golang.org/x/tools v0.0.0-20200918232735-d647fc253266 // indirect
 )
+

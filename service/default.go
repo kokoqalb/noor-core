@@ -9,7 +9,7 @@ import(
 
 	// IBM/go-sdk-core
 	"github.com/IBM/go-sdk-core/core"
-	
+
 	// watson-developer-cloud/go-sdk
 	"github.com/watson-developer-cloud/go-sdk/naturallanguageunderstandingv1"
 )
@@ -34,4 +34,5 @@ type request struct {
 func(service *defaultService) GetResult(bytes []byte) {
 	// TODO : write something
 
-} 
+}
+
