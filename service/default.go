@@ -4,12 +4,12 @@ import(
 	"encoding/json"
 	"fmt"
 
-	"github.com/kokoqaln/noor-core/model"
 	"github.com/kokoqalb/noor-core/repository"
+	"github.com/kokoqalb/noor-core/auth"
 
 	// IBM/go-sdk-core
 	"github.com/IBM/go-sdk-core/core"
-
+	
 	// watson-developer-cloud/go-sdk
 	"github.com/watson-developer-cloud/go-sdk/naturallanguageunderstandingv1"
 )
@@ -32,7 +32,13 @@ type request struct {
 }
 
 func(service *defaultService) GetResult(bytes []byte) {
-	// TODO : write something
+	// kokomadakaketenai
+	response, responseErr := naturalLanguageUnderstanding.Analyze(
+		&naturallanguageunderstandingv1.AnalyzeOptions = options
+	)
+	if responseErr != nil panic(responseErr)
 
-}
-
+	result := json.MarshalIndent(response, "", " ")
+	
+	return result
+} 
