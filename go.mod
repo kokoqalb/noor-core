@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/IBM/go-sdk-core v1.1.0
-	github.com/ant0ine/go-json-rest v3.3.2+incompatible
+	github.com/ant0ine/go-json-rest v3.3.2+incompatible // indirect
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/go-chi/render v1.0.1
 	github.com/ibm-developer/ibm-cloud-env-golang v1.0.0 // indirect
@@ -15,4 +15,3 @@ require (
 	github.com/watson-developer-cloud/go-sdk v1.7.0
 	golang.org/x/tools v0.0.0-20200918232735-d647fc253266 // indirect
 )
-
